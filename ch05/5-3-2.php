@@ -1,3 +1,8 @@
+
+# name:黃柏樽<BR>
+# sid:C113181124<BR>
+# ex03
+<BR>
 <?php
 $result=0;
 $n=0;

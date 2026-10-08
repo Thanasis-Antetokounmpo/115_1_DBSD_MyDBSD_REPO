@@ -1,3 +1,7 @@
+# name:黃柏樽<BR>
+# sid:C113181124<BR>
+# ex04
+<BR>
 <?php
 $total=0;
 for( $i = 0; $i <=15; $i++ ){

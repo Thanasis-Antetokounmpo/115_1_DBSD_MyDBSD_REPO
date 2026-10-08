@@ -1,7 +1,7 @@
 # name:黃柏樽<BR>
 # sid:C113181124<BR>
 # ex01
-<BR>
+<HR>
 <?php
 $grade =80;
 if ($grade >=80) {

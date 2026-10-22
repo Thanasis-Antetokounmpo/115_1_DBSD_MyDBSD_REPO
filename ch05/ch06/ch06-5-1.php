@@ -1,9 +1,11 @@
 <?php
 echo "<HR>";
-echo "SID: C1234567<br/>";
-echo "Name: Smith<br/>";
+echo "SID: C113181124<br/>";
+echo "Name: 黃柏樽<br/>";
+echo "EX01<br/>";
 echo "<HR>";
 
+print "PHP與MySQL網頁設計<br/>";
 // 匯率換算函數
 function rateExchange($amount, $rate) {
    $result = $amount * $rate;

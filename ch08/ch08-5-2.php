@@ -1,0 +1,59 @@
+<?php
+
+echo "<HR>";
+
+echo "SID: C113181124<br/>";
+
+echo "Name: 黃柏樽<br/>";
+
+echo "W08-EX04" . "<br/>";
+
+echo "<HR>";
+
+if (isset($_COOKIE["ItemName"])) {
+
+    $itemName = $_COOKIE["ItemName"];
+
+    $quantity = $_COOKIE["Quantity"];
+
+
+
+    echo "取得ItemName的Cookie值 : " . $itemName . "<br/>";
+
+    echo "取得Quantity的Cookie值 : " . $quantity . "<br/>";
+
+
+
+    setcookie("ItemName", "", time() - 3600);
+
+    setcookie("Quantity", "", time() - 3600);
+
+} else {
+
+    $itemName = "white iphone";
+
+    $quantity = "10";
+
+
+
+    $date = strtotime("+10 days", time());
+
+    setcookie("ItemName", $itemName, $date);
+
+    setcookie("Quantity", $quantity, $date);
+
+
+
+    echo "新增名為ItemName的Cookie: " . $itemName . "<br/>";
+
+    echo "新增名為Quantity的Cookie: " . $quantity . "<br/>";
+
+    echo "Cookie期限:" . date("l F j Y h:i:s A", $date);
+
+}
+
+?>
+
+<br>
+
+<a href="ch08-5-1.php">Receive Cookie</a>
